@@ -1788,10 +1788,9 @@ svg#play_icon:hover #triangle {
 	top: -108px;
 	right: 0;
 }
-.review-slider .owl-nav button.owl-prev,
-.review-slider .owl-nav button.owl-next,
-.courses-slider .owl-nav button.owl-prev,
-.courses-slider .owl-nav button.owl-next{
+.review-slider .owl-nav button.owl-prev
+.review-slider .owl-nav button.owl-next
+{
 	width: 50px;
 	height: 50px;
 	line-height: 52px;
@@ -1801,6 +1800,11 @@ svg#play_icon:hover #triangle {
 	color: #fff;
 	font-size: 23px;
 	transition: .5s;
+}
+
+.courses-slider .owl-nav button.owl-prev,
+.courses-slider .owl-nav button.owl-next{
+	display: none;
 }
 
 .courses-slider .owl-nav button.owl-prev:hover,
