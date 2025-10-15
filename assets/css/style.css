@@ -7351,6 +7351,24 @@ html .ui-button.ui-state-disabled:active {
 /*--------------------------------------------------------------
 8. Header
 ----------------------------------------------------------------*/
+
+.logo{
+      width: 250px;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+  .logo {
+    width: 180px; /* smaller width for mobile */
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    width: 200px;
+  }
+}
+
 .td_site_header {
   position: absolute;
   z-index: 101;
@@ -7933,6 +7951,7 @@ html .ui-button.ui-state-disabled:active {
   transition: all 0.4s ease;
 }
 @media (max-width: 450px) {
+
   .td_side_header .td_side_header_in {
     padding: 70px 50px 50px 20px;
   }
