@@ -18,6 +18,25 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
+  <style>
+    .logo{
+      width: 250px;
+      height: auto;
+    }
+    @media (max-width: 767px) {
+  .logo {
+    width: 180px; /* smaller width for mobile */
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    width: 200px;
+  }
+}
+  </style>
+
   <body class="td_theme_2">
     <!-- Start Preloader -->
     <div class="td_preloader">
@@ -70,8 +89,8 @@
         <div class="container">
           <div class="td_main_header_in">
             <div class="td_main_header_left">
-              <a class="td_site_branding" href="index.html">
-                <img src="assets/img/logo_v2.svg" alt="Logo">
+              <a class="td_site_branding logo" href="index.html">
+                <img src="assets/img/Beycan Logo.svg" alt="Logo">
               </a>
               <div class="td_header_category_wrap position-relative">
                 <button class="td_header_dropdown_btn td_medium td_heading_color">
@@ -100,18 +119,9 @@
                 <div class="td_nav_list_wrap">
                   <div class="td_nav_list_wrap_in">
                     <ul class="td_nav_list">
-                      <li class="menu-item-has-children">
-                        <a href="index.html">Home</a>
-                        <ul>
-                          <li><a href="index.html">University</a></li>
-                          <li><a href="home-v2.html">Online Educations</a></li>
-                          <li><a href="home-v3.html">Education</a></li>
-                          <li><a href="home-v4.html">Kindergarten</a></li>
-                          <li><a href="home-v5.html">Modern Language</a></li>
-                          <li><a href="home-v6.html">Al-Quran Learning</a></li>
-                          <li><a href="home-v7.html">Motivation Speaker</a></li>
-                          <li><a href="home-v8.html">Kitchen Coach</a></li>
-                        </ul>
+                      <li>
+                        <a href="home-v3.html">Home</a>
+                       
                       </li>
                       <li class="menu-item-has-children">
                         <a href="products.html">Courses</a>
@@ -168,7 +178,7 @@
                   </div>
                 </div>
               </nav>
-              <div class="td_hero_icon_btns position-relative">
+               <div class="td_hero_icon_btns position-relative">
                 <div class="position-relative">
                   <button class="td_circle_btn td_center td_search_tobble_btn" type="button">
                     <img src="assets/img/icons/search_2.svg" alt="">                                     
@@ -181,16 +191,7 @@
                       </button>
                     </form>
                   </div>
-                </div>
-                <button class="td_circle_btn td_center td_wishlist_btn" type="button">
-                  <img src="assets/img/icons/love.svg" alt="">
-                  <span class="td_circle_btn_label">0</span>
-                </button>
-                <button class="td_circle_btn td_center" type="button">
-                  <img src="assets/img/icons/cart.svg" alt="">  
-                  <span class="td_circle_btn_label">0</span>                                                       
-                </button>
-              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -199,30 +200,37 @@
     <!-- End Header Section -->
     <!-- Start Hero Section -->
     <section class="td_hero td_style_3 td_center td_hobble">
-      <div class="container">
-        <div class="td_hero_text wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-          <p class="td_hero_subtitle_up td_fs_18 td_accent_color td_spacing_1 td_semibold text-uppercase td_mb_14">100 % Quality Qurantee</p>
-          <h1 class="td_hero_title td_fs_64 td_mb_20">Build The Skills You Need To Be Successful</h1>
-          <p class="td_hero_subtitle td_fs_18 td_heading_color td_opacity_7 td_mb_30">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          <div class="td_btns_group">
-            <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_30 td_medium">
-              <span class="td_btn_in td_white_color td_accent_bg">
-                <span>Explore All Courses</span>
-                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg> 
-              </span>             
-            </a>
-            <a href="https://www.youtube.com/embed/rRid6GCJtgc" class="td_player_btn_wrap td_video_open td_medium td_heading_color">
-              <span class="td_player_btn td_center">
-                <span></span>
-              </span>
-              <span class="td_play_btn_text">Watch Demo Video</span>
-            </a>
-          </div>
-        </div>
-      </div>
+     <div class="container">
+  <div class="td_hero_text wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+    <p class="td_hero_subtitle_up td_fs_18 td_accent_color td_spacing_1 td_semibold text-uppercase td_mb_14">
+      100% Practical & Career-Focused Training
+    </p>
+    <h1 class="td_hero_title td_fs_64 td_mb_20">
+      Build Your Technical Skills for a Brighter Future
+    </h1>
+    <p class="td_hero_subtitle td_fs_18 td_heading_color td_opacity_7 td_mb_30">
+      At <strong>Beycan Technical Institute</strong>, we combine hands-on practical training <br> with expert mentorship to prepare students for real-world careers in technical fields.
+    </p>
+    <div class="td_btns_group">
+      <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_30 td_medium">
+        <span class="td_btn_in td_white_color td_accent_bg">
+          <span>Explore Our Courses</span>
+          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg> 
+        </span>             
+      </a>
+      <a href="https://www.youtube.com/embed/rRid6GCJtgc" class="td_player_btn_wrap td_video_open td_medium td_heading_color">
+        <span class="td_player_btn td_center">
+          <span></span>
+        </span>
+        <span class="td_play_btn_text">Watch Institute Overview</span>
+      </a>
+    </div>
+  </div>
+</div>
+
       <div class="td_hero_img_box">
         <img src="assets/img/home_3/male-teenager-portrait-isolated.png" alt="" class="td_hero_img_1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
         <div class="td_hero_shape_1 td_hover_layer_3 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s"></div>
@@ -258,91 +266,94 @@
           </div>
         </div>
       </div>
-      <div class="td_rate_feature_list_wrap">
-        <div class="td_moving_box_wrap">
-          <div class="td_moving_box_in">
-            <div class="td_moving_box">
-              <ul class="td_rate_feature_list td_mp_0">
-                <li>
-                  <div class="td_rate_feature_icon td_center td_white_bg">
-                    <img src="assets/img/home_2/cs_rate_feature_icon_1.svg" alt="">
-                  </div>
-                  <div class="td_rate_feature_right">
-                    <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">30K+ Online Courses</h3>
-                    <p class="mb-0 td_white_color td_opacity_7">Solid Questions Solving & Fresh Topics</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="td_rate_feature_icon td_center td_white_bg">
-                    <img src="assets/img/home_2/cs_rate_feature_icon_2.svg" alt="">
-                  </div>
-                  <div class="td_rate_feature_right">
-                    <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Expert Instructor</h3>
-                    <p class="mb-0 td_white_color td_opacity_7">Learn and More expertise</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="td_rate_feature_icon td_center td_white_bg">
-                    <img src="assets/img/home_2/cs_rate_feature_icon_3.svg" alt="">
-                  </div>
-                  <div class="td_rate_feature_right">
-                    <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Life time access</h3>
-                    <p class="mb-0 td_white_color td_opacity_7">Behind the word mountains</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="td_rate_feature_icon td_center td_white_bg">
-                    <img src="assets/img/home_2/cs_rate_feature_icon_4.svg" alt="">
-                  </div>
-                  <div class="td_rate_feature_right">
-                    <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Get Certificate</h3>
-                    <p class="mb-0 td_white_color td_opacity_7">Behind the word mountains</p>
-                  </div>
-                </li>
-              </ul>
+<div class="td_rate_feature_list_wrap">
+  <div class="td_moving_box_wrap">
+    <div class="td_moving_box_in">
+      <div class="td_moving_box">
+        <ul class="td_rate_feature_list td_mp_0">
+          <li>
+            <div class="td_rate_feature_icon td_center td_white_bg">
+              <img src="assets/img/home_2/cs_rate_feature_icon_1.svg" alt="">
             </div>
-            <div class="td_moving_box">
-              <ul class="td_rate_feature_list td_mp_0">
-                <li>
-                  <div class="td_rate_feature_icon td_center td_white_bg">
-                    <img src="assets/img/home_2/cs_rate_feature_icon_1.svg" alt="">
-                  </div>
-                  <div class="td_rate_feature_right">
-                    <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">30K+ Online Courses</h3>
-                    <p class="mb-0 td_white_color td_opacity_7">Solid Questions Solving & Fresh Topics</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="td_rate_feature_icon td_center td_white_bg">
-                    <img src="assets/img/home_2/cs_rate_feature_icon_2.svg" alt="">
-                  </div>
-                  <div class="td_rate_feature_right">
-                    <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Expert Instructor</h3>
-                    <p class="mb-0 td_white_color td_opacity_7">Learn and More expertise</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="td_rate_feature_icon td_center td_white_bg">
-                    <img src="assets/img/home_2/cs_rate_feature_icon_3.svg" alt="">
-                  </div>
-                  <div class="td_rate_feature_right">
-                    <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Life time access</h3>
-                    <p class="mb-0 td_white_color td_opacity_7">Behind the word mountains</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="td_rate_feature_icon td_center td_white_bg">
-                    <img src="assets/img/home_2/cs_rate_feature_icon_4.svg" alt="">
-                  </div>
-                  <div class="td_rate_feature_right">
-                    <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Get Certificate</h3>
-                    <p class="mb-0 td_white_color td_opacity_7">Behind the word mountains</p>
-                  </div>
-                </li>
-              </ul>
+            <div class="td_rate_feature_right">
+              <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Practical Learning</h3>
+              <p class="mb-0 td_white_color td_opacity_7">Hands-on sessions with real industry tools</p>
             </div>
-          </div>
-        </div>
+          </li>
+          <li>
+            <div class="td_rate_feature_icon td_center td_white_bg">
+              <img src="assets/img/home_2/cs_rate_feature_icon_2.svg" alt="">
+            </div>
+            <div class="td_rate_feature_right">
+              <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Experienced Trainers</h3>
+              <p class="mb-0 td_white_color td_opacity_7">Learn from certified and skilled professionals</p>
+            </div>
+          </li>
+          <li>
+            <div class="td_rate_feature_icon td_center td_white_bg">
+              <img src="assets/img/home_2/cs_rate_feature_icon_3.svg" alt="">
+            </div>
+            <div class="td_rate_feature_right">
+              <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Career-Focused Courses</h3>
+              <p class="mb-0 td_white_color td_opacity_7">Designed to prepare students for real-world jobs</p>
+            </div>
+          </li>
+          <li>
+            <div class="td_rate_feature_icon td_center td_white_bg">
+              <img src="assets/img/home_2/cs_rate_feature_icon_4.svg" alt="">
+            </div>
+            <div class="td_rate_feature_right">
+              <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Government-Approved Certificates</h3>
+              <p class="mb-0 td_white_color td_opacity_7">Recognized credentials for your career growth</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="td_moving_box">
+        <ul class="td_rate_feature_list td_mp_0">
+          <li>
+            <div class="td_rate_feature_icon td_center td_white_bg">
+              <img src="assets/img/home_2/cs_rate_feature_icon_1.svg" alt="">
+            </div>
+            <div class="td_rate_feature_right">
+              <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Practical Learning</h3>
+              <p class="mb-0 td_white_color td_opacity_7">Hands-on sessions with real industry tools</p>
+            </div>
+          </li>
+          <li>
+            <div class="td_rate_feature_icon td_center td_white_bg">
+              <img src="assets/img/home_2/cs_rate_feature_icon_2.svg" alt="">
+            </div>
+            <div class="td_rate_feature_right">
+              <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Experienced Trainers</h3>
+              <p class="mb-0 td_white_color td_opacity_7">Learn from certified and skilled professionals</p>
+            </div>
+          </li>
+          <li>
+            <div class="td_rate_feature_icon td_center td_white_bg">
+              <img src="assets/img/home_2/cs_rate_feature_icon_3.svg" alt="">
+            </div>
+            <div class="td_rate_feature_right">
+              <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Career-Focused Courses</h3>
+              <p class="mb-0 td_white_color td_opacity_7">Designed to prepare students for real-world jobs</p>
+            </div>
+          </li>
+          <li>
+            <div class="td_rate_feature_icon td_center td_white_bg">
+              <img src="assets/img/home_2/cs_rate_feature_icon_4.svg" alt="">
+            </div>
+            <div class="td_rate_feature_right">
+              <h3 class="td_fs_24 td_semibold td_white_color td_mb_4">Government-Approved Certificates</h3>
+              <p class="mb-0 td_white_color td_opacity_7">Recognized credentials for your career growth</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
     <!-- End Rate Section -->
@@ -392,19 +403,25 @@
           <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
             <div class="td_section_heading td_style_1 td_mb_40">
               <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">About us</p>
-              <h2 class="td_section_title td_fs_48 td_mb_20">We are Always Best Course For your Learning</h2>
-              <p class="td_section_subtitle td_fs_18 mb-0">Far far away, behind the word mountains, far from the Consonantia, there live the blind texts. Separated they marks grove right at the coast of the Semantics a large language ocean</p>
-            </div>
+ <h2 class="td_section_title td_fs_48 td_mb_20">Empowering Students with Technical Excellence</h2>
+          <p class="td_section_subtitle td_fs_18 mb-0">
+            Beycan Technical Institute is dedicated to providing hands-on, industry-focused technical education. 
+            Our mission is to empower students with the skills and knowledge required to succeed in today’s competitive job market. 
+            With expert mentors, practical labs, and career guidance, we prepare our learners to become leaders in their respective technical domains.
+          </p>
+           </div>
             <div class="td_mb_40 position-relative">
               <div class="td_iconbox td_style_5">
                 <div class="td_iconbox_icon">
                   <div class="td_iconbox_icon_in td_center">
-                    <img src="assets/img/home_3/about_icon_1.svg" alt="">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Practical Learning" width="60">
                   </div>
                 </div>
                 <div class="td_iconbox_right">
-                  <h3 class="td_iconbox_title td_fs_32 td_mb_4">Sharing a Screen </h3>
-                  <p class="td_iconbox_subtitle mb-0 td_heading_color td_fs_18 td_opacity_7">There live the blind texts. Separated they live in Book marks grove.</p>
+ <h3 class="td_iconbox_title td_fs_32 td_mb_4">Practical Learning</h3>
+              <p class="td_iconbox_subtitle mb-0 td_heading_color td_fs_18 td_opacity_7">
+                We focus on real-world training that enhances practical skills and job readiness.
+              </p>
                 </div>
               </div>
               <div class="td_height_30 td_height_lg_30"></div>
@@ -415,14 +432,16 @@
                   </div>
                 </div>
                 <div class="td_iconbox_right">
-                  <h3 class="td_iconbox_title td_fs_32 td_mb_4">Best Mentors</h3>
-                  <p class="td_iconbox_subtitle mb-0 td_heading_color td_fs_18 td_opacity_7">There live the blind texts. Separated they live in Book marks grove.</p>
+ <h3 class="td_iconbox_title td_fs_32 td_mb_4">Expert Mentors</h3>
+              <p class="td_iconbox_subtitle mb-0 td_heading_color td_fs_18 td_opacity_7">
+                Our instructors are industry professionals dedicated to guiding every student toward success.
+              </p>
                 </div>
               </div>
             </div>
             <a href="about.html" class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
               <span class="td_btn_in td_white_color td_accent_bg">
-                <span>Explore More About </span>
+                <span>Explore More About Beycan</span>
                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                   <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -436,115 +455,102 @@
     </section>
     <!-- End About Section -->
     <!-- Start Category Section -->
-    <section class="td_gray_bg_5">
-      <div class="td_height_112 td_height_lg_75"></div>
-      <div class="container">
-        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Browse Categories</p>
-          <h2 class="td_section_title td_fs_48 mb-0">Explore Top Category</h2>
-        </div>
-        <div class="td_height_50 td_height_lg_50"></div>
-        <div class="row td_gap_y_24">
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_1.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Business Management</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_2.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Art & Design System</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_3.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Art & Biography</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_4.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Design & Pattern</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_5.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Photography & Video</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_6.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Blockchain Develop</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_7.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Design System</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_8.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Online Educations</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_9.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Health & Philosophy</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_10.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Math & Technology</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_11.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Zym Center & Fitness</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.45s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="assets/img/home_3/category_icon_12.svg" alt="">
-              </span>
-              <span class="td_iconbox_title">Language Academy</span>
-            </a>
-          </div>
-        </div>
+<section class="td_gray_bg_5">
+  <div class="td_height_112 td_height_lg_75"></div>
+  <div class="container">
+    <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+      <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Browse Courses</p>
+      <h2 class="td_section_title td_fs_48 mb-0">Top 9 Courses</h2>
+    </div>
+    <div class="td_height_50 td_height_lg_50"></div>
+    <div class="row td_gap_y_24">
+      
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/category_icon_1.svg" alt="">
+          </span>
+          <span class="td_iconbox_title">Programming & Coding</span>
+        </a>
       </div>
-      <div class="td_height_120 td_height_lg_80"></div>
-    </section>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/category_icon_2.svg" alt="">
+          </span>
+          <span class="td_iconbox_title">Robotics & Electronics</span>
+        </a>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/category_icon_3.svg" alt="">
+          </span>
+          <span class="td_iconbox_title">Web & Graphic Design</span>
+        </a>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/category_icon_4.svg" alt="">
+          </span>
+          <span class="td_iconbox_title">Gaming & Animation</span>
+        </a>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/category_icon_5.svg" alt="">
+          </span>
+          <span class="td_iconbox_title">Computer Hardware & Networking</span>
+        </a>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.45s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/category_icon_6.svg" alt="">
+          </span>
+          <span class="td_iconbox_title">Tally ERP & Accounting</span>
+        </a>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/abacus.png" alt="">
+          </span>
+          <span class="td_iconbox_title">Abacus</span>
+        </a>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.55s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/category_icon_8.svg" alt="">
+          </span>
+          <span class="td_iconbox_title">IoT & Embedded Systems</span>
+        </a>
+      </div>
+
+      <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+        <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+          <span class="td_iconbox_icon">
+            <img src="assets/img/home_3/category_icon_9.svg" alt="">
+          </span>
+          <span class="td_iconbox_title">Arduino & Raspberry Pi Robotics</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <div class="td_height_120 td_height_lg_80"></div>
+</section>
+
     <!-- End Category Section -->
     <!-- Start Courses Section -->
     <section>
@@ -556,7 +562,10 @@
             <h2 class="td_section_title td_fs_48 mb-0">Pick Our Latest Courses <br>and Build your Skills </h2>
           </div>
           <div class="td_section_heading_right">
-            <p class="td_section_subtitle td_fs_18 td_mb_16 td_heading_color td_opacity_9">Far far away, behind the word mountains, far from the Conson antia, there live the blind texts. Separated they marks</p>
+<p class="td_section_subtitle td_fs_18 td_mb_16 td_heading_color td_opacity_9">
+  Explore our courses to gain practical skills in programming, robotics, and design. Build knowledge that prepares you for real-world challenges.
+</p>
+
             <a href="courses-grid-with-sidebar.html" class="td_btn td_style_2 td_heading_color td_medium td_mb_10">
               See all Courses 
               <i>
@@ -1873,12 +1882,12 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Best institute for graphic designing , programming and Robotics . I studied graphics designing in 2023 to 2024 batch ... One of the best technical training institute in South tamilnadu</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="assets/img/home_1/avatar_1.png" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Antoni Alex</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">10th Batch Students</p>
+                      <h3 class="td_fs_20 td_semibold td_mb_2">Mani Kandan </h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">Students</p>
                     </div>
                   </div>
                   <span class="td_quote_icon td_accent_color">
@@ -1904,12 +1913,12 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">A wonderful place to learn.. My son learnt Scratch here. Trainers are very friendly and encouraging. They teach more than what the kiddo is enrolled for.. 5 stars without any doubt ✨️</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="assets/img/home_2/avatar_2.png" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Revert Alexan</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
+                      <h3 class="td_fs_20 td_semibold td_mb_2">Sana Sparkles </h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">Students</p>
                     </div>
                   </div>
                   <span class="td_quote_icon td_accent_color">
@@ -1935,12 +1944,12 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">I am also a arts student. But, still now I've learning web designing in Beycan. So believe I can for a good teaching and secure place.</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="assets/img/home_2/avatar_3.png" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Anthonia Alex</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">12th Batch Students</p>
+                      <h3 class="td_fs_20 td_semibold td_mb_2"> Mahalakshmi Jayaraman </h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">Students</p>
                     </div>
                   </div>
                   <span class="td_quote_icon td_accent_color">
@@ -1966,12 +1975,13 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Best institute for Programming and Robotics . I studied in Web Designing in 2024. Good teaching and very useful.Beycan is the best Technical Training Institute...
+</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="assets/img/home_2/avatar_4.png" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Arke Marey</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">09th Batch Students</p>
+                      <h3 class="td_fs_20 td_semibold td_mb_2">Muthu Nazeer </h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">Students</p>
                     </div>
                   </div>
                   <span class="td_quote_icon td_accent_color">
@@ -1997,12 +2007,12 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Well Training by experts in C Field.I really Enjoyed Web Designing course.It's really useful for our future, Thank you Beycan Technical Training Institute.</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="assets/img/home_1/avatar_1.png" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Antoni Alex</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">10th Batch Students</p>
+                      <h3 class="td_fs_20 td_semibold td_mb_2">Sundara veattai channel </h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">Students</p>
                     </div>
                   </div>
                   <span class="td_quote_icon td_accent_color">
@@ -2028,12 +2038,12 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Hands-on coaching, Ideal place to architect your kids summer times, Well structured curriculum (courses) based on age group, Good ambiance with proper setup maintained at affordable fees, ..</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="assets/img/home_2/avatar_2.png" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Revert Alexan</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
+                      <h3 class="td_fs_20 td_semibold td_mb_2">RajaSekar Ramaraj </h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">Students</p>
                     </div>
                   </div>
                   <span class="td_quote_icon td_accent_color">
@@ -2059,12 +2069,12 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Be insightful and informative,best place for kids and adults to learn lot.Trainers are very knowledgeable and support.</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="assets/img/home_2/avatar_3.png" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Anthonia Alex</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">12th Batch Students</p>
+                      <h3 class="td_fs_20 td_semibold td_mb_2">Kumaravel T</h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">Students</p>
                     </div>
                   </div>
                   <span class="td_quote_icon td_accent_color">
@@ -2090,12 +2100,12 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Excellent place to learn Tally, MS Office, computers, and robotics. Supportive teachers and a knowledge-rich environment help students excel and achieve.</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="assets/img/home_2/avatar_4.png" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Arke Marey</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">09th Batch Students</p>
+                      <h3 class="td_fs_20 td_semibold td_mb_2">Velammal</h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">Students</p>
                     </div>
                   </div>
                   <span class="td_quote_icon td_accent_color">
