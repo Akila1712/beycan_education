@@ -17,8 +17,57 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css" rel="stylesheet">
+
   </head>
     <style>
+
+/* Gallery Images */
+  .gallery-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+
+  /* Hover zoom effect */
+  .td_gallery_item:hover .gallery-img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+  }
+
+  /* Rounded corners */
+  .td_radius_10 {
+    border-radius: 10px;
+  }
+
+  /* Box shadow for depth */
+  .td_gallery_item {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+  }
+
+  /* Make all gallery items square */
+  .td_gallery_item {
+    aspect-ratio: 1/1;
+  }
+
+  /* Section responsive spacing */
+  @media (max-width: 767px) {
+    .td_section_title {
+      font-size: 32px;
+    }
+    .td_section_subtitle_up {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .td_section_title {
+      font-size: 28px;
+    }
+  }
+
     .logo{
       width: 250px;
       height: auto;
@@ -222,7 +271,7 @@
           <div class="col-xl-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
             <div class="td_section_heading td_style_1 td_mb_30">
               <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">About us</p>
-              <h2 class="td_section_title td_fs_48 td_mb_30">Think, Calculate, Excel with Abacus</h2>
+              <h2 class="td_section_title td_fs_48 td_mb_30">Turning Beads into Brilliance</h2>
               <p class="td_section_subtitle td_fs_18 mb-0">  At Beycan Indian Abacus, we make learning math exciting and hands-on! Our scientifically designed abacus program develops logic, creativity, and mental calculation skills. With certified trainers and flexible online + in-centre programs, every child learns at their own pace while building confidence and academic excellence.
 </p>
             </div>
@@ -727,7 +776,7 @@
                 <div class="col-lg-5 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
                   <div class="td_section_heading td_style_1">
                     <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Testimonials</p>
-                    <h2 class="td_section_title td_fs_48 mb-0">Parents Speech With Us</h2>
+                    <h2 class="td_section_title td_fs_48 mb-0">Parents Speak with Us</h2>
                   </div>
                   <div class="td_height_50 td_height_lg_50"></div>
                   <div class="td_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="0" data-slides-per-view="1">
@@ -748,11 +797,104 @@
                               <i class="fa-solid fa-star fa-fw"></i>
                             </div>
                           </div> 
-                          <blockquote class="td_testimonial_text td_fs_24 td_medium td_heading_color td_mb_35 td_opacity_9">The pandemic has accelerated the shift to online and hybrid learning models. Platforms like Coursera, edX, and university-specific online programs, accelerated the shift to online and hybrid.</blockquote>
+                          <blockquote class="td_testimonial_text td_fs_24 td_medium td_heading_color td_mb_35 td_opacity_9">It is very useful and makes calculations stress-free. Students can improve their talent while enjoying it like a fun game. Teaching methods are very sweet and kind. Thanks to Indian Abacus and Beycan Institute.</blockquote>
                           <div class="td_testimonial_meta">
                             <img src="assets/img/home_4/avatar_1.png" alt="">
                             <div class="td_testimonial_meta_right">
-                              <h3 class="td_fs_24 td_semibold td_mb_2">Marvin McKinney</h3>
+                              <h3 class="td_fs_24 td_semibold td_mb_2">Dharunkarthik</h3>
+                              <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
+                            </div>
+                          </div>
+                          <span class="td_quote_icon td_accent_color">
+                            <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.64286 46H18.5714L27.8571 27.6V0H0V27.6H13.9286L4.64286 46ZM41.7857 46H55.7143L65 27.6V0H37.1429V27.6H51.0714L41.7857 46Z" fill="currentColor"/>
+                            </svg>                  
+                          </span> 
+                        </div>
+                      </div>
+                        <div class="td_slide">
+                        <div class="td_testimonial td_style_1 td_type_3">
+                          <div class="td_rating td_mb_35" data-rating="5">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <div class="td_rating_percentage">
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                            </div>
+                          </div> 
+                          <blockquote class="td_testimonial_text td_fs_24 td_medium td_heading_color td_mb_35 td_opacity_9">Mam your teaching is very well. I like your teaching and candling the students. She is an easily understand the problems. It's very helpful for our future. Thank you mam.</blockquote>
+                          <div class="td_testimonial_meta">
+                            <img src="assets/img/home_4/avatar_1.png" alt="">
+                            <div class="td_testimonial_meta_right">
+                              <h3 class="td_fs_24 td_semibold td_mb_2">Muthumani Chandru</h3>
+                              <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
+                            </div>
+                          </div>
+                          <span class="td_quote_icon td_accent_color">
+                            <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.64286 46H18.5714L27.8571 27.6V0H0V27.6H13.9286L4.64286 46ZM41.7857 46H55.7143L65 27.6V0H37.1429V27.6H51.0714L41.7857 46Z" fill="currentColor"/>
+                            </svg>                  
+                          </span> 
+                        </div>
+                      </div>
+                        <div class="td_slide">
+                        <div class="td_testimonial td_style_1 td_type_3">
+                          <div class="td_rating td_mb_35" data-rating="5">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <div class="td_rating_percentage">
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                            </div>
+                          </div> 
+                          <blockquote class="td_testimonial_text td_fs_24 td_medium td_heading_color td_mb_35 td_opacity_9">Ma'am you teach very well. I really like your coaching. Thankyou mam. Agilesh and my statement mam</blockquote>
+                          <div class="td_testimonial_meta">
+                            <img src="assets/img/home_4/avatar_1.png" alt="">
+                            <div class="td_testimonial_meta_right">
+                              <h3 class="td_fs_24 td_semibold td_mb_2">Ravi ichanthran</h3>
+                              <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
+                            </div>
+                          </div>
+                          <span class="td_quote_icon td_accent_color">
+                            <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.64286 46H18.5714L27.8571 27.6V0H0V27.6H13.9286L4.64286 46ZM41.7857 46H55.7143L65 27.6V0H37.1429V27.6H51.0714L41.7857 46Z" fill="currentColor"/>
+                            </svg>                  
+                          </span> 
+                        </div>
+                      </div>
+                        <div class="td_slide">
+                        <div class="td_testimonial td_style_1 td_type_3">
+                          <div class="td_rating td_mb_35" data-rating="5">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <div class="td_rating_percentage">
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                              <i class="fa-solid fa-star fa-fw"></i>
+                            </div>
+                          </div> 
+                          <blockquote class="td_testimonial_text td_fs_24 td_medium td_heading_color td_mb_35 td_opacity_9">Excellent place to learn Abacus. Very good teaching, Support, Guidance and care on children. We had awesome learning experience. Kudos to Beycan Abacus team. Keep Rocking. Best wishes.</blockquote>
+                          <div class="td_testimonial_meta">
+                            <img src="assets/img/home_4/avatar_1.png" alt="">
+                            <div class="td_testimonial_meta_right">
+                              <h3 class="td_fs_24 td_semibold td_mb_2">Senthilkumar.S</h3>
                               <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
                             </div>
                           </div>
@@ -779,11 +921,12 @@
                               <i class="fa-solid fa-star fa-fw"></i>
                             </div>
                           </div> 
-                          <blockquote class="td_testimonial_text td_fs_24 td_medium td_heading_color td_mb_35 td_opacity_9">The pandemic has accelerated the shift to online and hybrid learning models. Platforms like Coursera, edX, and university-specific online programs, accelerated the shift to online and hybrid.</blockquote>
+                          <blockquote class="td_testimonial_text td_fs_24 td_medium td_heading_color td_mb_35 td_opacity_9">Great job using the abacus to solve the problems quickly and accurately.
+Your teaching method is very engaging and clear. The way you break down complex steps into simple ones helps the students understand easily.</blockquote>
                           <div class="td_testimonial_meta">
                             <img src="assets/img/home_1/avatar_1.png" alt="">
                             <div class="td_testimonial_meta_right">
-                              <h3 class="td_fs_24 td_semibold td_mb_2">Marvin McKinney</h3>
+                              <h3 class="td_fs_24 td_semibold td_mb_2">Priya R</h3>
                               <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
                             </div>
                           </div>
@@ -811,6 +954,17 @@
                 </svg>                                            
               </div>
             </div>
+             <div class="text-center mt-5">
+            <a href="https://www.google.com/search?sca_esv=25498c63d407204d&sxsrf=AE3TifP6s8WZuF3aHfW2E3f2x43gSnp0AQ:1761287963321&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1Olyj0FHLYzCEcxQp3Xnf8Zifo1c4-lbCE0DD4CEEqETIKWaUrfV40U_3vYiqm-vKLL2N0lu_FxYQW-25T5SvjDmRlgUNx0Epl6R2aP71_Mh-RYL-s0wU6l-YoAmVO6Yhs97JI%3D&q=Indian+Abacus+Rajapalayam+RR+Nagar+Reviews&sa=X&ved=2ahUKEwjupJr7nLyQAxWTzTgGHVcuENsQ0bkNegQIKhAE&biw=1366&bih=607&dpr=1" class="td_btn td_style_1 td_radius_30 td_medium">
+              <span class="td_btn_in td_white_color td_accent_bg">
+                <span>See More Reviews</span>
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </a>
+          </div>
           </div>
           <div class="td_height_120 td_height_lg_80"></div>
         </div>
@@ -822,8 +976,8 @@
       <div class="td_height_112 td_height_lg_75"></div>
       <div class="container">
         <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">WE CHANGE YOUR LIFE & WORLD</p>
-          <h2 class="td_section_title td_fs_48 mb-0">We’re Dedicated To Excellent <br>Service And Kids Care</h2>
+          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">OUR VALUABLE EXPERT TEACHERS TEAM</p>
+          <h2 class="td_section_title td_fs_48 mb-0">    Our expert teachers guide every child <br> toward better learning outcomes.</h2>
         </div>
         <div class="td_height_50 td_height_lg_50"></div>
         <div class="row td_gap_y_24">
@@ -952,127 +1106,72 @@
     </section>
     <!-- End CTA Section -->
     <!-- Start Blog Section -->
-    <section id="blog">
-      <div class="td_height_112 td_height_lg_75"></div>
-      <div class="container">
-        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">BLOG & ARTICLES</p>
-          <h2 class="td_section_title td_fs_48 mb-0">Take A Look At The Latest <br>Articles</h2>
-        </div>
-        <div class="td_height_50 td_height_lg_50"></div>
-        <div class="row td_gap_y_24">
-          <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="td_post td_style_1 td_type_2">
-              <a href="blog-details.html" class="td_post_thumb d-block">
-                <img src="assets/img/home_4/post_1.png" alt="">
-                <span class="td_post_label">Learning</span>
-              </a>
-              <div class="td_post_info">
-                <div class="td_post_meta td_fs_14 td_medium td_mb_16">
-                  <span><img src="assets/img/icons/calendar.svg" alt="">Jan 23 , 2024</span>
-                  <span><img src="assets/img/icons/user.svg" alt="">Jhon Doe</span>
-                </div>
-                <h2 class="td_post_title td_fs_24 td_medium td_mb_16">
-                  <a href="blog-details.html">Tips for Students and Recent Graduates</a>
-                </h2>
-                <p class="td_post_subtitle td_mb_20 td_heading_color td_opacity_7">Far far away, behind the word moun tains, far from the Conso nantia.</p>
-                <a href="blog-details.html" class="td_btn td_style_3 td_heading_color td_fs_18">
-                  <span>Read More</span>
-                  <i>
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 6L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12 11C12 11 17 7.31756 17 5.99996C17 4.68237 12 1 12 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
-            <div class="td_post td_style_1 td_type_2">
-              <a href="blog-details.html" class="td_post_thumb d-block">
-                <img src="assets/img/home_4/post_2.png" alt="">
-                <span class="td_post_label">Remote</span>
-              </a>
-              <div class="td_post_info">
-                <div class="td_post_meta td_fs_14 td_medium td_mb_20">
-                  <span><img src="assets/img/icons/calendar.svg" alt="">Jan 20 , 2024</span>
-                  <span><img src="assets/img/icons/user.svg" alt="">Jhon Doe</span>
-                </div>
-                <h2 class="td_post_title td_fs_24 td_medium td_mb_16">
-                  <a href="blog-details.html">Leverage Internships for Career Success</a>
-                </h2>
-                <p class="td_post_subtitle td_mb_24 td_heading_color td_opacity_7">Education is a dynamic and evolving field that plays a crucial.</p>
-                <a href="blog-details.html" class="td_btn td_style_3 td_heading_color td_fs_18">
-                  <span>Read More</span>
-                  <i>
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 6L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12 11C12 11 17 7.31756 17 5.99996C17 4.68237 12 1 12 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="td_post td_style_1 td_type_2">
-              <a href="blog-details.html" class="td_post_thumb d-block">
-                <img src="assets/img/home_4/post_3.png" alt="">
-                <span class="td_post_label">Reading</span>
-              </a>
-              <div class="td_post_info">
-                <div class="td_post_meta td_fs_14 td_medium td_mb_20">
-                  <span><img src="assets/img/icons/calendar.svg" alt="">Jan 18 , 2024</span>
-                  <span><img src="assets/img/icons/user.svg" alt="">Jhon Doe</span>
-                </div>
-                <h2 class="td_post_title td_fs_24 td_medium td_mb_16">
-                  <a href="blog-details.html">How to Inspire Your Students for life</a>
-                </h2>
-                <p class="td_post_subtitle td_mb_24 td_heading_color td_opacity_7">Education is a dynamic and evolving field that plays a crucial.</p>
-                <a href="blog-details.html" class="td_btn td_style_3 td_heading_color td_fs_18">
-                  <span>Read More</span>
-                  <i>
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 6L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12 11C12 11 17 7.31756 17 5.99996C17 4.68237 12 1 12 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.45s">
-            <div class="td_post td_style_1 td_type_2">
-              <a href="blog-details.html" class="td_post_thumb d-block">
-                <img src="assets/img/home_4/post_3.png" alt="">
-                <span class="td_post_label">Learning</span>
-              </a>
-              <div class="td_post_info">
-                <div class="td_post_meta td_fs_14 td_medium td_mb_20">
-                  <span><img src="assets/img/icons/calendar.svg" alt="">Jan 18 , 2024</span>
-                  <span><img src="assets/img/icons/user.svg" alt="">Jhon Doe</span>
-                </div>
-                <h2 class="td_post_title td_fs_24 td_medium td_mb_16">
-                  <a href="blog-details.html">Role of Intelligence in Academic Success</a>
-                </h2>
-                <p class="td_post_subtitle td_mb_24 td_heading_color td_opacity_7">Education is a dynamic and evolving field that plays a crucial.</p>
-                <a href="blog-details.html" class="td_btn td_style_3 td_heading_color td_fs_18">
-                  <span>Read More</span>
-                  <i>
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 6L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12 11C12 11 17 7.31756 17 5.99996C17 4.68237 12 1 12 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                </a>
-              </div>
-            </div>
-          </div>
+<section id="gallery">
+  <div class="td_height_112 td_height_lg_75"></div>
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+      <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">EXPLORE OUR MOMENTS</p>
+      <h2 class="td_section_title td_fs_48 mb-0">Discover joyful learning <br>through our vibrant gallery.</h2>
+    </div>
+    <div class="td_height_50 td_height_lg_50"></div>
+
+    <!-- Gallery Grid -->
+    <div class="row td_mt_60 g-3">
+      <!-- Gallery Item -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
+          <a href="assets/img/home_4/newsletter_img_1.png" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/newsletter_img_1.png" alt="Gallery Image 1" class="img-fluid w-100 h-100 gallery-img">
+          </a>
         </div>
       </div>
-      <div class="td_height_120 td_height_lg_80"></div>
-    </section>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
+          <a href="assets/img/home_4/post_1.png" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/post_1.png" alt="Gallery Image 2" class="img-fluid w-100 h-100 gallery-img">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
+          <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/gallery/gallery-3.jpg" alt="Gallery Image 3" class="img-fluid w-100 h-100 gallery-img">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
+          <a href="assets/img/home_4/newsletter_img_1.png" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/newsletter_img_1.png" alt="Gallery Image 4" class="img-fluid w-100 h-100 gallery-img">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
+          <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/gallery/gallery-5.jpg" alt="Gallery Image 5" class="img-fluid w-100 h-100 gallery-img">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
+          <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/gallery/gallery-6.jpg" alt="Gallery Image 6" class="img-fluid w-100 h-100 gallery-img">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="td_height_120 td_height_lg_80"></div>
+</section>
+
     <!-- End Blog Section -->
     <!-- Start Newsletter Section -->
     <div class="td_newsletter td_style_1 td_type_1 td_center">
@@ -1174,6 +1273,18 @@
     </div>
     <!-- End Scroll Up Button -->
     <!-- Script -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    loop: true,
+    zoomable: true,
+    openEffect: 'fade',
+    closeEffect: 'fade'
+  });
+</script>
+
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/jquery.slick.min.js"></script>
     <script src="assets/js/odometer.js"></script>
