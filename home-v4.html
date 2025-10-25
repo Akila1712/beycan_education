@@ -27,7 +27,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  aspect-ratio: 1 / 1; /* Perfect square grid */
+  aspect-ratio: 1 / 1; /* perfect square grid */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -36,6 +36,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease, filter 0.5s ease;
+  display: block;
 }
 
 /* Hover zoom effect */
@@ -53,30 +54,34 @@
   .td_section_title { font-size: 28px; }
 }
 
-/* --- GLightbox popup images: same width & height --- */
+/* --- GLightbox popup images: same width & height (no dark background) --- */
 .glightbox-container .gslide-image img {
-  width: 80vh !important;      /* same width */
-  height: 80vh !important;     /* same height */
-  object-fit: cover !important; /* crop evenly without stretch */
+  width: 80vh !important;
+  height: 80vh !important;
+  object-fit: contain !important; /* keeps full image visible */
   display: block;
   margin: auto;
   border-radius: 10px;
-  max-width: 90vw !important;   /* prevent overflow on small screens */
-  max-height: 90vw !important;
+  max-width: 90vw !important;
+  max-height: 90vh !important;
+  background: transparent !important; /* ensure no background color */
 }
 
-/* Optional: darker backdrop */
-.glightbox-clean .gslide-media {
-  background: rgba(0, 0, 0, 0.9);
+/* Remove black backdrop */
+.glightbox-clean .gslide-media,
+.glightbox-container,
+.glightbox-overlay {
+  background: transparent !important;
 }
 
-/* Mobile adjustments */
+/* --- Mobile adjustments --- */
 @media (max-width: 575px) {
   .glightbox-container .gslide-image img {
-    width: 70vw !important;
-    height: 70vw !important;
+    width: 85vw !important;
+    height: 85vw !important;
   }
 }
+
 
 
     .logo{
@@ -140,7 +145,7 @@
                         <a href="#gallery">Gallery</a>
                        
                       </li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="#contact">Contact</a></li>
                     </ul>
                   </div>
                 </div>
@@ -384,7 +389,7 @@
                     </li>
                   </ul>
                   <div class="td_card_btn">
-                    <a href="" class="td_btn td_style_1 td_radius_30 td_medium">
+                    <a href="#contact" class="td_btn td_style_1 td_radius_30 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -419,7 +424,7 @@
                     </li>
                   </ul>
                   <div class="td_card_btn">
-                    <a href="" class="td_btn td_style_1 td_radius_30 td_medium">
+                    <a href="#contact" class="td_btn td_style_1 td_radius_30 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -454,7 +459,7 @@
                     </li>
                   </ul>
                   <div class="td_card_btn">
-                    <a href="" class="td_btn td_style_1 td_radius_30 td_medium">
+                    <a href="#contact" class="td_btn td_style_1 td_radius_30 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -489,7 +494,7 @@
                     </li>
                   </ul>
                   <div class="td_card_btn">
-                    <a href="" class="td_btn td_style_1 td_radius_30 td_medium">
+                    <a href="#contact" class="td_btn td_style_1 td_radius_30 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -524,7 +529,7 @@
                     </li>
                   </ul>
                   <div class="td_card_btn">
-                    <a href="" class="td_btn td_style_1 td_radius_30 td_medium">
+                    <a href="#contact" class="td_btn td_style_1 td_radius_30 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -559,7 +564,7 @@
                     </li>
                   </ul>
                   <div class="td_card_btn">
-                    <a href="" class="td_btn td_style_1 td_radius_30 td_medium">
+                    <a href="#contact" class="td_btn td_style_1 td_radius_30 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1156,24 +1161,24 @@ Your teaching method is very engaging and clear. The way you break down complex 
 
       <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.4s">
         <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
-          <a href="assets/img/home_4/newsletter_img_1.png" class="glightbox" data-gallery="beycan-gallery">
-            <img src="assets/img/home_4/newsletter_img_1.png" alt="Gallery Image 4" class="img-fluid w-100 h-100 gallery-img">
+          <a href="assets/img/home_4/Abacus/4.jpeg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/Abacus/4.jpeg" alt="Gallery Image 4" class="img-fluid w-100 h-100 gallery-img">
           </a>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">
         <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
-          <a href="assets/img/home_4/post_3.png" class="glightbox" data-gallery="beycan-gallery">
-            <img src="assets/img/home_4/post_3.png" alt="Gallery Image 5" class="img-fluid w-100 h-100 gallery-img">
+          <a href="assets/img/home_4/Abacus/5.jpg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/Abacus/5.jpg" alt="Gallery Image 5" class="img-fluid w-100 h-100 gallery-img">
           </a>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.6s">
         <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
-          <a href="assets/img/home_4/post_4.png" class="glightbox" data-gallery="beycan-gallery">
-            <img src="assets/img/home_4/post_4.png" alt="Gallery Image 6" class="img-fluid w-100 h-100 gallery-img">
+          <a href="assets/img/home_4/Abacus/7.jpeg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/Abacus/7.jpeg" alt="Gallery Image 6" class="img-fluid w-100 h-100 gallery-img">
           </a>
         </div>
       </div>
@@ -1195,27 +1200,82 @@ Your teaching method is very engaging and clear. The way you break down complex 
 </section>
 
     <!-- End Blog Section -->
-    <!-- Start Newsletter Section -->
-    <div class="td_newsletter td_style_1 td_type_1 td_center">
-      <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-        <h2 class="td_fs_36 td_mb_20 text-center td_semibold">Quickly Get Update News & Offer <br>With Admission News</h2>
-        <form action="#" class="td_newsletter_form">
-          <input type="email" class="td_newsletter_input" placeholder="Email address">
-          <button type="submit" class="td_btn td_style_1 td_radius_30 td_medium">
-            <span class="td_btn_in td_white_color td_accent_bg">
-              <span>Subscribe Now</span>
-            </span>             
-          </button>
-        </form>
-      </div>
-      <div class="td_newsletter_img_1 position-absolute wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-        <img src="assets/img/home_4/newsletter_img_1.png" alt="">
-      </div>
-      <div class="td_newsletter_img_2 position-absolute wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-        <img src="assets/img/home_4/newsletter_img_2.png" alt="">
-      </div>
+<!-- Start Contact Section -->
+<section id="contact" class="td_contact td_style_1 td_center">
+  <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+
+    <!-- Section Heading -->
+    <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+      <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">
+        Get in Touch With Us
+      </p>
+      <h2 class="td_section_title td_fs_48 mb-0">
+  Reach Out Today <br> And Get Expert Guidance
+      </h2>
     </div>
-    <!-- End Newsletter Section -->
+
+    <div class="row align-items-stretch mt-5"> <!-- stretch columns to same height -->
+
+      <!-- Left Side - Contact Form (Centered) -->
+      <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+        <div class="w-100" style="max-width:500px;">
+          <p class="td_mb_30 text-center">Interested in our Abacus programs? Fill out the form below, and our team will contact you soon.</p>
+<form id="whatsappForm" class="td_contact_form">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" class="form-control td_newsletter_input" placeholder="Enter your full name" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="email" class="form-label">Email Address:</label>
+      <input type="email" id="email" name="email" class="form-control td_newsletter_input" placeholder="Enter your email" required>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="phone" class="form-label">Phone Number:</label>
+      <input type="text" id="phone" name="phone" class="form-control td_newsletter_input" placeholder="Enter your contact number" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="age" class="form-label">Student’s Age:</label>
+      <input type="number" id="age" name="age" class="form-control td_newsletter_input" placeholder="Enter age" required>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Message:</label>
+    <textarea id="message" name="message" rows="4" class="form-control td_newsletter_input" placeholder="Type your message..." required></textarea>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="td_btn td_style_1 td_radius_30 td_medium">
+      <span class="td_btn_in td_white_color td_accent_bg">
+        <span>Send Message</span>
+      </span>
+    </button>
+  </div>
+</form>
+        </div>
+      </div>
+
+      <!-- Right Side - Google Map -->
+      <div class="col-lg-6 col-md-12 d-flex align-items-center mt-4 mt-lg-0">
+        <div class="w-100 td_map_wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.9139532080762!2d77.5768934!3d9.4289476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06c346124b3687%3A0x78a26d26469c80c!2sIndian%20Abacus%20Rajapalayam%20RR%20Nagar!5e0!3m2!1sen!2sin!4v1761399382903!5m2!1sen!2sin" 
+            width="100%" height="100%" style="border:0; min-height:500px; border-radius:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Contact Section -->
+
+
+     
     <!-- Start Footer Section -->
     <footer class="td_footer td_style_1 td_type_1 td_color_1">
       <div class="container">
@@ -1307,6 +1367,31 @@ Your teaching method is very engaging and clear. The way you break down complex 
   });
 </script>
 
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(e){
+    e.preventDefault(); // Prevent normal form submission
+
+    // Get form values
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var age = document.getElementById("age").value;
+    var message = document.getElementById("message").value;
+
+    // WhatsApp number (use country code without +)
+    var whatsappNumber = "919150744096"; // replace with your number
+
+    // Construct WhatsApp message
+    var text = `*New Contact Form Submission*\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAge: ${age}\nMessage: ${message}`;
+
+    // Encode message
+    var encodedText = encodeURIComponent(text);
+
+    // Open WhatsApp
+    var url = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+    window.open(url, "_blank");
+});
+</script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/jquery.slick.min.js"></script>
     <script src="assets/js/odometer.js"></script>
