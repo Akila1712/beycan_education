@@ -22,51 +22,62 @@
   </head>
     <style>
 
-/* Gallery Images */
-  .gallery-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease, filter 0.5s ease;
-  }
+/* --- GALLERY GRID: uniform square layout --- */
+.td_gallery_item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1; /* Perfect square grid */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
 
-  /* Hover zoom effect */
-  .td_gallery_item:hover .gallery-img {
-    transform: scale(1.1);
-    filter: brightness(1.1);
-  }
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
 
-  /* Rounded corners */
-  .td_radius_10 {
-    border-radius: 10px;
-  }
+/* Hover zoom effect */
+.td_gallery_item:hover .gallery-img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
 
-  /* Box shadow for depth */
-  .td_gallery_item {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    overflow: hidden;
-  }
+/* Responsive section titles */
+@media (max-width: 767px) {
+  .td_section_title { font-size: 32px; }
+  .td_section_subtitle_up { font-size: 14px; }
+}
+@media (max-width: 575px) {
+  .td_section_title { font-size: 28px; }
+}
 
-  /* Make all gallery items square */
-  .td_gallery_item {
-    aspect-ratio: 1/1;
-  }
+/* --- GLightbox popup images: same width & height --- */
+.glightbox-container .gslide-image img {
+  width: 80vh !important;      /* same width */
+  height: 80vh !important;     /* same height */
+  object-fit: cover !important; /* crop evenly without stretch */
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  max-width: 90vw !important;   /* prevent overflow on small screens */
+  max-height: 90vw !important;
+}
 
-  /* Section responsive spacing */
-  @media (max-width: 767px) {
-    .td_section_title {
-      font-size: 32px;
-    }
-    .td_section_subtitle_up {
-      font-size: 14px;
-    }
-  }
+/* Optional: darker backdrop */
+.glightbox-clean .gslide-media {
+  background: rgba(0, 0, 0, 0.9);
+}
 
-  @media (max-width: 575px) {
-    .td_section_title {
-      font-size: 28px;
-    }
+/* Mobile adjustments */
+@media (max-width: 575px) {
+  .glightbox-container .gslide-image img {
+    width: 70vw !important;
+    height: 70vw !important;
   }
+}
+
 
     .logo{
       width: 250px;
@@ -1121,24 +1132,24 @@ Your teaching method is very engaging and clear. The way you break down complex 
       <!-- Gallery Item -->
       <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.1s">
         <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
-          <a href="assets/img/home_4/newsletter_img_1.png" class="glightbox" data-gallery="beycan-gallery">
-            <img src="assets/img/home_4/newsletter_img_1.png" alt="Gallery Image 1" class="img-fluid w-100 h-100 gallery-img">
+          <a href="assets/img/home_4/Abacus/17.jpeg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/Abacus/17.jpeg" alt="Gallery Image 1" class="img-fluid w-100 h-100 gallery-img">
           </a>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
         <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
-          <a href="assets/img/home_4/post_1.png" class="glightbox" data-gallery="beycan-gallery">
-            <img src="assets/img/home_4/post_1.png" alt="Gallery Image 2" class="img-fluid w-100 h-100 gallery-img">
+          <a href="assets/img/home_4/Abacus/1.jpeg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/Abacus/1.jpeg" alt="Gallery Image 2" class="img-fluid w-100 h-100 gallery-img">
           </a>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.3s">
         <div class="td_gallery_item td_radius_10 overflow-hidden position-relative">
-          <a href="assets/img/home_4/post_2.png" class="glightbox" data-gallery="beycan-gallery">
-            <img src="assets/img/home_4/post_2.png" alt="Gallery Image 3" class="img-fluid w-100 h-100 gallery-img">
+          <a href="assets/img/home_4/Abacus/18.jpeg" class="glightbox" data-gallery="beycan-gallery">
+            <img src="assets/img/home_4/Abacus/18.jpeg" alt="Gallery Image 3" class="img-fluid w-100 h-100 gallery-img">
           </a>
         </div>
       </div>
