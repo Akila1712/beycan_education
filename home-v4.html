@@ -1310,15 +1310,7 @@ Your teaching method is very engaging and clear. The way you break down complex 
     <!-- Script -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
 
-<script>
-  const lightbox = GLightbox({
-    selector: '.glightbox',
-    loop: true,
-    zoomable: true,
-    openEffect: 'fade',
-    closeEffect: 'fade'
-  });
-</script>
+
 
 <!--
 <script>
@@ -1354,5 +1346,18 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e){
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: false,
+    closeButton: true,
+    openEffect: 'zoom',
+    closeEffect: 'fade',
+    history: false // ⚡ prevents "back button" from exiting website
+  });
+</script>
+
   </body>
 </html>
