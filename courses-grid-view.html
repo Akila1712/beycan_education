@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
+  <style>
+    .td_fs_24 {
+  font-size: 21px; /* adjust as needed */
+}
+
+  </style>
   <body>
     <!-- Start Preloader -->
     <div class="td_preloader">
@@ -256,24 +262,32 @@
             </div>
             <span class=" td_heading_color td_medium">Showing 12 Courses Of 50</span>
           </div>
-          <div class="td_section_head_2_right">
-            <div class="td_section_head_select td_fs_20">
-              <b class="td_semibold td_heading_color">Sort By: </b>
-              <select class="td_form_field td_medium">
-                <option value="0">Featured</option>
-                <option value="1">Popular</option>
-                <option value="2">New</option>
-              </select>
-            </div>
-          </div>
+          <div class="td_section_head_2_right d-flex align-items-center gap-4 mb-4">
+  <div class="td_section_head_select td_fs_20">
+    <b class="td_semibold td_heading_color">Course Category: </b>
+    <select id="categoryFilter" class="td_form_field td_medium">
+      <option value="all">All Categories</option>
+      <option value="Computer IT" selected >Computer IT</option>
+      <option value="Programming">Programming</option>
+      <option value="Python & Data">Python & Data</option>
+      <option value="Design & CAD">Design & CAD</option>
+      <option value="Robotics">Robotics</option>
+      <option value="Multimedia">Multimedia</option>
+      <option value="App & Game Dev">App & Game Dev</option>
+      <option value="Emerging Tech">Emerging Tech</option>
+      <option value="Skill Development">Skill Development</option>
+      <option value="Tally">Tally</option>
+    </select>
+  </div>
+</div>
         </div>
         <div class="td_height_60 td_height_lg_40"></div>
-        <div class="row td_gap_y_30 td_row_gap_30">
-          <div class="col-lg-4 col-md-6">
+        <div class="row td_gap_y_30 td_row_gap_30" id="courseGrid">
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_1.jpg" alt="">
+                <img src="assets/img/home_3/office_automation.jpg" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -287,9 +301,9 @@
                       <span class="td_opacity_7">12 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Starting Reputed Education & Build your Skills</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Far far away, behind the word mountains, far from the Consonantia.</p>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Office Automation</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Master MS Office tools for efficient document and data management</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="4.5">
                       <i class="fa-regular fa-star"></i>
@@ -318,11 +332,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_2.jpg" alt="">
+                <img src="assets/img/home_3/advance_excel.jpg" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -336,9 +350,9 @@
                       <span class="td_opacity_7">20 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Software Engeneer</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Master Technology & Elevate Your Career</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Unlock the power of technology to drive your career forward.</p>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Advance Excel</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn powerful formulas, dashboards, and analytics.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
                       <i class="fa-regular fa-star"></i>
@@ -367,11 +381,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_3.jpg" alt="">
+                <img src="assets/img/home_3/frontend.jpg" alt="" style="height: 240px;">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -385,9 +399,9 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Bachelor Of Arts</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Boost Creativity & Expand Your Horizons</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Discover innovative techniques to enhance your creative thinking.</p>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Web Development – Frontend</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Design responsive websites with HTML, CSS, and JavaScript.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
                       <i class="fa-regular fa-star"></i>
@@ -416,254 +430,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <span class="td_card_label td_accent_bg td_white_color">Best Seller</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_4.jpg" alt="">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">250 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">12 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Business Administrator</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Develop essential leadership skills to excel in any industry.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="4">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/30 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
+         <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_5.jpg" alt="">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">80 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">12 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Fine of Arts</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Learn Coding & Advance Your Skills Up</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Gain in-demand coding expertise to stay ahead in the tech world.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="4.5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <span class="td_card_label td_accent_bg td_white_color">Best Seller</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_6.jpg" alt="">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">200 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">12 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer Science</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Explore Marketing & Build Your Brand</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Master marketing strategies to grow your personal or business brand.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="4.5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/15 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <span class="td_card_label td_accent_bg td_white_color">Best Seller</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_7.jpg" alt="">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">150 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">12 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Starting Reputed Education & Build your Skills</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Far far away, behind the word mountains, far from the Consonantia.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="4.5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_8.jpg" alt="">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">100 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">20 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Software Engeneer</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Master Technology & Elevate Your Career</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Unlock the power of technology to drive your career forward.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/10 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_9.jpg" alt="">
+                <img src="assets/img/home_3/backend.jpg" alt="" style="height: 240px;">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -677,9 +448,9 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Bachelor Of Arts</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Boost Creativity & Expand Your Horizons</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Discover innovative techniques to enhance your creative thinking.</p>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Web Development – Backend</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build dynamic web apps using PHP, Node.js, or Python.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
                       <i class="fa-regular fa-star"></i>
@@ -708,28 +479,29 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_10.jpg" alt="">
+                <img src="assets/img/home_3/react.jpg" alt="" style="height: 240px;">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
                   <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
                     <li>
                       <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">250 Seats</span>
+                      <span class="td_opacity_7">300 Seats</span>
                     </li>
                     <li>
                       <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">12 Semesters</span>
+                      <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Business Administrator</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Develop essential leadership skills to excel in any industry.</p>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Web Development - React</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Create modern web interfaces with React.js.</p>
                   <div class="td_card_review">
-                    <div class="td_rating" data-rating="4">
+                    <div class="td_rating" data-rating="5">
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
@@ -743,7 +515,7 @@
                         <i class="fa-solid fa-star fa-fw"></i>
                       </div>
                     </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/30 Ratings)</span>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
                     <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
@@ -756,28 +528,29 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_11.jpg" alt="">
+                <img src="assets/img/home_3/fullstack.jpg" alt="" style="height: 240px;">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
                   <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
                     <li>
                       <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">80 Seats</span>
+                      <span class="td_opacity_7">300 Seats</span>
                     </li>
                     <li>
                       <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">12 Semesters</span>
+                      <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Fine of Arts</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Learn Coding & Advance Your Skills Up</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Gain in-demand coding expertise to stay ahead in the tech world.</p>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Full Stack Development</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn complete web development with GitHub integration.</p>
                   <div class="td_card_review">
-                    <div class="td_rating" data-rating="4.5">
+                    <div class="td_rating" data-rating="5">
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
@@ -791,7 +564,7 @@
                         <i class="fa-solid fa-star fa-fw"></i>
                       </div>
                     </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
                     <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
@@ -804,28 +577,29 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_1/course_thumb_12.jpg" alt="">
+                <img src="assets/img/home_3/powerbi.jpg" alt="" style="height: 240px;">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
                   <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
                     <li>
                       <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">200 Seats</span>
+                      <span class="td_opacity_7">300 Seats</span>
                     </li>
                     <li>
                       <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">12 Semesters</span>
+                      <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer Science</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Explore Marketing & Build Your Brand</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Master marketing strategies to grow your personal or business brand.</p>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Power BI</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Visualize and analyze data with interactive dashboards.</p>
                   <div class="td_card_review">
-                    <div class="td_rating" data-rating="4.5">
+                    <div class="td_rating" data-rating="5">
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
                       <i class="fa-regular fa-star"></i>
@@ -839,7 +613,7 @@
                         <i class="fa-solid fa-star fa-fw"></i>
                       </div>
                     </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/15 Ratings)</span>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
                     <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
@@ -852,6 +626,107 @@
               </div>
             </div>
           </div>
+<!--programming-->
+<div class="col-lg-4 col-md-6 course-card" data-category="Programming">
+            <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
+              <a href="course-details.html" class="td_card_thumb">
+                <img src="assets/img/home_3/powerbi.jpg" alt="" style="height: 240px;">
+              </a>
+              <div class="td_card_info td_white_bg">
+                <div class="td_card_info_in">
+                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                    <li>
+                      <img src="assets/img/icons/user_3.svg" alt="">
+                      <span class="td_opacity_7">300 Seats</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/icons/book.svg" alt="">
+                      <span class="td_opacity_7">8 Semesters</span>
+                    </li>
+                  </ul>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Programming</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">C Programming Junior</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn the basics of C programming, logic, and simple coding projects.</p>
+                  <div class="td_card_review">
+                    <div class="td_rating" data-rating="5">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="td_rating_percentage">
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                      </div>
+                    </div>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
+                  </div>
+                  <div class="td_card_btn">
+                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                      <span class="td_btn_in td_white_color td_accent_bg">
+                        <span>Enroll Now</span>
+                      </span>             
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<div class="col-lg-4 col-md-6 course-card" data-category="Programming">
+            <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
+              <a href="course-details.html" class="td_card_thumb">
+                <img src="assets/img/home_3/powerbi.jpg" alt="" style="height: 240px;">
+              </a>
+              <div class="td_card_info td_white_bg">
+                <div class="td_card_info_in">
+                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                    <li>
+                      <img src="assets/img/icons/user_3.svg" alt="">
+                      <span class="td_opacity_7">300 Seats</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/icons/book.svg" alt="">
+                      <span class="td_opacity_7">8 Semesters</span>
+                    </li>
+                  </ul>
+                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Power BI</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Visualize and analyze data with interactive dashboards.</p>
+                  <div class="td_card_review">
+                    <div class="td_rating" data-rating="5">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="td_rating_percentage">
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                      </div>
+                    </div>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
+                  </div>
+                  <div class="td_card_btn">
+                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                      <span class="td_btn_in td_white_color td_accent_bg">
+                        <span>Enroll Now</span>
+                      </span>             
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <!--python-->
         </div>
         <div class="td_height_60 td_height_lg_40"></div>
         <div class="text-center">
@@ -980,5 +855,27 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+  const categoryFilter = document.getElementById('categoryFilter');
+  const courses = document.querySelectorAll('.course-card');
+
+  function filterCourses() {
+    const selectedCategory = categoryFilter.value;
+    courses.forEach(course => {
+      if (selectedCategory === 'all' || course.dataset.category === selectedCategory) {
+        course.style.display = 'block';
+      } else {
+        course.style.display = 'none';
+      }
+    });
+  }
+
+  // Run filter once on page load (Computer IT active by default)
+  window.addEventListener('DOMContentLoaded', filterCourses);
+
+  // Run filter on dropdown change
+  categoryFilter.addEventListener('change', filterCourses);
+</script>
   </body>
 </html>
