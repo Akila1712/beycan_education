@@ -118,62 +118,25 @@
                           <li><a href="about.html">About</a></li>
                       <li class="menu-item-has-children">
   <a href="courses-grid-view.html">Courses</a>
-  <ul>
-    <li><a href="#">Computer IT</a>
-    
-    </li>
-    <li><a href="#">Programming</a></li>
-    <li><a href="#">Python & Data (Advanced Track)</a></li>
-    <li><a href="#">Design, CAD & Engineering</a></li>
-    <li><a href="#">Hardware Design & VLSI</a></li>
-    <li><a href="#">Robotics & Electronics</a></li>
-    <li><a href="#">Design & Multimedia</a></li>
-    <li><a href="#">App & Game Development</a></li>
-    <li><a href="#">Emerging Tech</a></li>
-    <li><a href="#">Skill Development</a></li>
-    <li><a href="#">Tally</a></li>
-  </ul>
+ <ul id="headerCategoryMenu">
+  <li><a href="#" data-filter="Computer IT">Computer IT</a></li>
+  <li><a href="#" data-filter="Programming">Programming</a></li>
+  <li><a href="#" data-filter="Python & Data">Python & Data</a></li>
+  <li><a href="#" data-filter="Design & CAD">Design & CAD</a></li>
+  <li><a href="#" data-filter="Hardware">Hardware</a></li>
+  <li><a href="#" data-filter="Robotics">Robotics</a></li>
+  <li><a href="#" data-filter="Multimedia">Multimedia</a></li>
+  <li><a href="#" data-filter="App & Game Dev">App & Game Dev</a></li>
+  <li><a href="#" data-filter="Emerging Tech">Emerging Tech</a></li>
+  <li><a href="#" data-filter="Skill Development">Skill Development</a></li>
+  <li><a href="#" data-filter="Tally">Tally</a></li>
+</ul>
+
 </li>
 
-                      <li class="menu-item-has-children td_mega_menu">
-                        <a href="#">Pages</a>
-                        <ul class="td_mega_wrapper">
-                          <li class="menu-item-has-children">
-                            <h4>Inner Pages</h4>
-                            <ul>
-                              <li><a href="event.html">Upcoming Event</a></li>
-                              <li><a href="event-details.html">Event Details</a></li>
-                              <li><a href="team-members.html">Team Members</a></li>
-                              <li><a href="team-member-details.html">Team Details</a></li>
-                            </ul>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <h4>Inner Pages</h4>
-                            <ul>
-                              <li><a href="students-registrations.html">Students Registrations</a></li>
-                              <li><a href="instructor-registrations.html">Instructor Registrations</a></li>
-                              <li><a href="signup.html">Signup</a></li>
-                              <li><a href="signin.html">Signin</a></li>
-                            </ul>
-                          </li>
-                          <li class="menu-item-has-children">
-                            <h4>Shop Pages</h4>
-                            <ul>
-                              <li><a href="faqs.html">Faqs</a></li>
-                              <li><a href="cart.html">Cart</a></li>
-                              <li><a href="checkout.html">Checkout</a></li>
-                              <li><a href="error.html">Error</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children">
-                        <a href="#">Blogs</a>
-                        <ul>
-                          <li><a href="blog.html">Blogs</a></li>
-                          <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
-                          <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
+                      <li>
+                        <a href="blog.html">Blogs</a>
+                        
                       </li>
                       <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -239,8 +202,8 @@
   <div class="td_section_head_select td_fs_20">
     <b class="td_semibold td_heading_color">Course Category: </b>
     <select id="categoryFilter" class="td_form_field td_medium">
-      <option value="all">All Categories</option>
-      <option value="Computer IT" selected>Computer IT</option>
+      <option value="all" selected>All Categories</option>
+      <option value="Computer IT">Computer IT</option>
       <option value="Programming">Programming</option>
       <option value="Python & Data">Python & Data</option>
       <option value="Design & CAD" >Design & CAD</option>
@@ -260,8 +223,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/office_automation.jpg" alt="">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/computer/office.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -275,8 +238,8 @@
                       <span class="td_opacity_7">12 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Office Automation</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Office Automation</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Master MS Office tools for efficient document and data management</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="4.5">
@@ -296,7 +259,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -309,8 +272,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/advance_excel.jpg" alt="">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/computer/advance.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -324,8 +287,8 @@
                       <span class="td_opacity_7">20 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Advance Excel</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Advance Excel</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn powerful formulas, dashboards, and analytics.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -345,7 +308,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/10 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -355,11 +318,12 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
+
+           <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/frontend.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/computer/power_bi.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -373,204 +337,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Web Development – Frontend</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Design responsive websites with HTML, CSS, and JavaScript.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-         <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/backend.jpg" alt="" style="height: 240px;">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">300 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">8 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Web Development – Backend</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build dynamic web apps using PHP, Node.js, or Python.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/react.jpg" alt="" style="height: 240px;">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">300 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">8 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Web Development - React</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Create modern web interfaces with React.js.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/fullstack.jpg" alt="" style="height: 240px;">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">300 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">8 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Full Stack Development</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn complete web development with GitHub integration.</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/powerbi.jpg" alt="" style="height: 240px;">
-              </a>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="assets/img/icons/user_3.svg" alt="">
-                      <span class="td_opacity_7">300 Seats</span>
-                    </li>
-                    <li>
-                      <img src="assets/img/icons/book.svg" alt="">
-                      <span class="td_opacity_7">8 Semesters</span>
-                    </li>
-                  </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Power BI</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Power BI</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Visualize and analyze data with interactive dashboards.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -590,7 +358,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -600,12 +368,12 @@
               </div>
             </div>
           </div>
-<!--programming-->
-<div class="col-lg-4 col-md-6 course-card" data-category="Programming">
+
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/powerbi.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/computer/frontend.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -619,8 +387,206 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Programming</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">C Programming</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Web Development – Frontend</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Design responsive websites with HTML, CSS, and JavaScript.</p>
+                  <div class="td_card_review">
+                    <div class="td_rating" data-rating="5">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="td_rating_percentage">
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                      </div>
+                    </div>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
+                  </div>
+                  <div class="td_card_btn">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
+                      <span class="td_btn_in td_white_color td_accent_bg">
+                        <span>Enroll Now</span>
+                      </span>             
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
+            <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/computer/backend.png" alt="">
+              </a>
+              <div class="td_card_info td_white_bg">
+                <div class="td_card_info_in">
+                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                    <li>
+                      <img src="assets/img/icons/user_3.svg" alt="">
+                      <span class="td_opacity_7">300 Seats</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/icons/book.svg" alt="">
+                      <span class="td_opacity_7">8 Semesters</span>
+                    </li>
+                  </ul>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Web Development – Backend</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build dynamic web apps using PHP, Node.js, or Python.</p>
+                  <div class="td_card_review">
+                    <div class="td_rating" data-rating="5">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="td_rating_percentage">
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                      </div>
+                    </div>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
+                  </div>
+                  <div class="td_card_btn">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
+                      <span class="td_btn_in td_white_color td_accent_bg">
+                        <span>Enroll Now</span>
+                      </span>             
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
+            <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/computer/react.png" alt="">
+              </a>
+              <div class="td_card_info td_white_bg">
+                <div class="td_card_info_in">
+                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                    <li>
+                      <img src="assets/img/icons/user_3.svg" alt="">
+                      <span class="td_opacity_7">300 Seats</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/icons/book.svg" alt="">
+                      <span class="td_opacity_7">8 Semesters</span>
+                    </li>
+                  </ul>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Web Development - React</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Create modern web interfaces with React.js.</p>
+                  <div class="td_card_review">
+                    <div class="td_rating" data-rating="5">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="td_rating_percentage">
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                      </div>
+                    </div>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
+                  </div>
+                  <div class="td_card_btn">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
+                      <span class="td_btn_in td_white_color td_accent_bg">
+                        <span>Enroll Now</span>
+                      </span>             
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 course-card" data-category="Computer IT">
+            <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/computer/fullstack.png" alt="">
+              </a>
+              <div class="td_card_info td_white_bg">
+                <div class="td_card_info_in">
+                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                    <li>
+                      <img src="assets/img/icons/user_3.svg" alt="">
+                      <span class="td_opacity_7">300 Seats</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/icons/book.svg" alt="">
+                      <span class="td_opacity_7">8 Semesters</span>
+                    </li>
+                  </ul>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Computer IT</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Full Stack Development</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn complete web development with GitHub integration.</p>
+                  <div class="td_card_review">
+                    <div class="td_rating" data-rating="5">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="td_rating_percentage">
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                      </div>
+                    </div>
+                    <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
+                  </div>
+                  <div class="td_card_btn">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
+                      <span class="td_btn_in td_white_color td_accent_bg">
+                        <span>Enroll Now</span>
+                      </span>             
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+<!--programming-->
+<div class="col-lg-4 col-md-6 course-card" data-category="Programming">
+            <div class="td_card td_style_3 d-block td_radius_10">
+              <span class="td_card_label td_accent_bg td_white_color">New</span>
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/programming/c.png" alt="">
+              </a>
+              <div class="td_card_info td_white_bg">
+                <div class="td_card_info_in">
+                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                    <li>
+                      <img src="assets/img/icons/user_3.svg" alt="">
+                      <span class="td_opacity_7">300 Seats</span>
+                    </li>
+                    <li>
+                      <img src="assets/img/icons/book.svg" alt="">
+                      <span class="td_opacity_7">8 Semesters</span>
+                    </li>
+                  </ul>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Programming</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">C Programming</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn the fundamentals of coding and logic building.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -640,7 +606,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -653,8 +619,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="Programming">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/python.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/programming/python.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -668,8 +634,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Programming</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Python Programming </a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Programming</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Python Programming </a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Explore easy and powerful coding for modern applications.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -689,7 +655,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -703,8 +669,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Programming">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/java.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/programming/java.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -718,8 +684,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Programming</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Java Programming</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Programming</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Java Programming</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Master object-oriented programming and app development.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -739,7 +705,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -755,8 +721,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Python & Data">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/java.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/python/core.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -770,8 +736,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Core Python Programming</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Core Python Programming</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn Python fundamentals, data types, functions, and real-world coding basics.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -791,7 +757,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -806,8 +772,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Python & Data">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/java.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/python/fullstack.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -821,8 +787,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Python Full Stack</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Python Full Stack</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build websites using Python backend, databases, and frontend technologies.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -842,7 +808,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -857,8 +823,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Python & Data">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/java.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/python/data.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -872,8 +838,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Python for Data Analytics</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Python for Data Analytics</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Analyze data using Python and create dashboards with Power BI & Tableau.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -893,7 +859,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -908,8 +874,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Python & Data">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/java.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/python/ai_basic.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -923,8 +889,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Python for AI (Basic)</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Python for AI (Basic)</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">AI concepts using Python, covering basics like data handling and models.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -944,7 +910,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -959,8 +925,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Python & Data">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/java.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/python/ai_advance.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -974,8 +940,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Python for AI (Advanced)</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Python for AI (Advanced)</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build AI models using Python with algorithms and real-world applications.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -995,7 +961,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1010,8 +976,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Python & Data">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/java.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/python/ml_basic.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1025,8 +991,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Python for ML (Basic)</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Python for ML (Basic)</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn machine learning using Python with beginner-friendly models.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1046,7 +1012,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1061,8 +1027,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Python & Data">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/programming/java.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/python/ml_advance.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1076,8 +1042,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Python for ML (Advanced)</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Python & Data</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Python for ML (Advanced)</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Master ML algorithms, model optimization, and Python ML projects.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1097,7 +1063,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1113,8 +1079,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Design & CAD">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/mechanic.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/cad/mechanical.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1128,8 +1094,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & CAD</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">AutoCAD Mechanical</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & CAD</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">AutoCAD Mechanical</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Design and draft precise mechanical components.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1149,7 +1115,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1164,8 +1130,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Design & CAD">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/electrical.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/cad/electrical.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1179,8 +1145,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & CAD</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">AutoCAD Electrical</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & CAD</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">AutoCAD Electrical</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Create and manage electrical control system drawings.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1200,7 +1166,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1215,8 +1181,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Design & CAD">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/civil.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/cad/civil.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1230,8 +1196,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & CAD</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">AutoCAD Civil</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & CAD</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">AutoCAD Civil</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Plan and design civil engineering structures efficiently.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1251,7 +1217,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1266,8 +1232,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Design & CAD">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/pcb design.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/cad/pcb_design.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1281,8 +1247,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & CAD</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">PCB Design</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & CAD</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">PCB Design</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Design printed circuit boards for electronic devices.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1302,7 +1268,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1320,7 +1286,7 @@
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/pcb design.jpg" alt="" style="height: 240px;">
+                <img src="assets/img/home_3/hardware/verilog.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1334,7 +1300,7 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Hardware Design & VLSI</span></a>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Hardware Design & VLSI</span></a>
                   <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">VLSI Verilog</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn digital hardware design using Verilog HDL and simulation techniques.</p>
                   <div class="td_card_review">
@@ -1355,7 +1321,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1371,7 +1337,7 @@
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/pcb design.jpg" alt="" style="height: 240px;">
+                <img src="assets/img/home_3/hardware/vhdl.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1385,7 +1351,7 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Hardware Design & VLSI</span></a>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Hardware Design & VLSI</span></a>
                   <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">VLSI VHDL</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build hardware circuits and digital systems using VHDL programming.</p>
                   <div class="td_card_review">
@@ -1406,7 +1372,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1422,7 +1388,7 @@
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/pcb design.jpg" alt="" style="height: 240px;">
+                <img src="assets/img/home_3/hardware/advance.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1436,7 +1402,7 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Hardware Design & VLSI</span></a>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Hardware Design & VLSI</span></a>
                   <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">VLSI Advanced</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Master VLSI workflows, advanced logic design, and chip-level concepts.</p>
                   <div class="td_card_review">
@@ -1457,7 +1423,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1473,7 +1439,7 @@
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/pcb design.jpg" alt="" style="height: 240px;">
+                <img src="assets/img/home_3/hardware/combo.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1487,7 +1453,7 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Hardware Design & VLSI</span></a>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Hardware Design & VLSI</span></a>
                   <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">VLSI Combo (All Modules)</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Get complete training in Verilog, VHDL, and advanced VLSI design.</p>
                   <div class="td_card_review">
@@ -1508,7 +1474,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1523,8 +1489,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Robotics">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/pcb design.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/robotics/scratch_junior.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1538,8 +1504,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Scratch Junior</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Scratch Junior</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn coding basics through fun, visual storytelling.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1559,7 +1525,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1574,8 +1540,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Robotics">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/cad/pcb design.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/robotics/scratch_senior.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1589,8 +1555,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Scratch Senior</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Scratch Senior</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build interactive games and animations with advanced Scratch logic.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1610,7 +1576,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1625,8 +1591,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Robotics">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/robotics_junior.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/robotics/robotics_junior.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1640,8 +1606,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Robotics Junior</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Robotics Junior</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Discover simple robots and hands-on building activities.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1661,7 +1627,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1676,8 +1642,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Robotics">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/robotics_senior.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/robotics/robotics_senior.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1691,8 +1657,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Robotics Senior</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Robotics Senior</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Design, program, and control advanced robotic systems.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1712,7 +1678,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1727,8 +1693,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Robotics">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/arduino.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/robotics/arduino_junior.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1742,8 +1708,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Arduino Junior</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Arduino Junior</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn basic electronics and simple Arduino projects.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1763,7 +1729,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1778,8 +1744,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Robotics">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/arduino_senior.jpeg" alt="" style=" height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/robotics/arduino_senior.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1793,8 +1759,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Arduino Senior</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Arduino Senior</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build and code advanced automation and sensor-based systems.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1814,7 +1780,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1829,8 +1795,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Robotics">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/robotics/raspberry.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1844,8 +1810,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Raspberry Pi</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Robotics & Electronic</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Raspberry Pi</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Explore computing, IoT, and real-world programming with Raspberry Pi.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1865,7 +1831,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1880,8 +1846,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Multimedia">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/multimedia/photoshop.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1895,8 +1861,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Adobe Photoshop</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Adobe Photoshop</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn image editing, retouching, and creative graphic design.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1916,7 +1882,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1930,8 +1896,8 @@
 <div class="col-lg-4 col-md-6 course-card" data-category="Multimedia">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/multimedia/animated.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1945,8 +1911,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Adobe Animate (2D)</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Adobe Animate (2D)</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Create interactive 2D animations for web and multimedia.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -1966,7 +1932,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -1980,8 +1946,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="Multimedia">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/multimedia/premium.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -1995,8 +1961,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Adobe Premiere Pro </a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Adobe Premiere Pro </a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Edit videos professionally with transitions, effects, and audio tools.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2016,7 +1982,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2030,8 +1996,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="Multimedia">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/multimedia/blender_basic.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2045,8 +2011,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Blender Basics</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Blender Basics</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn basic 3D modeling, texturing, and simple animations.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2066,7 +2032,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2080,8 +2046,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="Multimedia">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/multimedia/blender_advance.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2095,8 +2061,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Blender Advanced</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Design & Multimedia</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Blender Advanced</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Create impressive 3D scenes, characters, and animations.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2116,7 +2082,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2133,8 +2099,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="App & Game Dev">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/app/app_nocode.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2148,8 +2114,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Android App Development</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Android App Development</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Create mobile apps easily using drag-and-drop blocks without coding.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2169,7 +2135,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2183,8 +2149,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="App & Game Dev">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/app/app_code.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2198,8 +2164,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Android App Development</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Android App Development</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build Android apps using real coding, UI design, and functional features.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2219,7 +2185,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2233,8 +2199,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="App & Game Dev">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/app/2d_game.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2248,8 +2214,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">2D Game Development</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">2D Game Development</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Design and develop fun 2D games without coding using GDevelop.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2269,7 +2235,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2283,8 +2249,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="App & Game Dev">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/app/unity_game.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2298,8 +2264,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Unity Game Dev Basics</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Unity Game Dev Basics</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn the fundamentals of creating 2D and 3D games in Unity.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2319,7 +2285,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2333,8 +2299,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="App & Game Dev">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/app/unity_3d.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2348,8 +2314,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Unity 3D Advanced</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>App & Game Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Unity 3D Advanced</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Build 3D games with professional mechanics and effects in Unity.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2369,7 +2335,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2385,7 +2351,7 @@
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+                <img src="assets/img/home_3/emerging/cyber.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2399,7 +2365,7 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Emerging Tech</span></a>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Emerging Tech</span></a>
                   <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Cybersecurity Fundamentals</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn the basics of cybersecurity and digital safety.</p>
                   <div class="td_card_review">
@@ -2420,7 +2386,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2435,7 +2401,7 @@
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+                <img src="assets/img/home_3/emerging/ethical.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2449,7 +2415,7 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Emerging Tech</span></a>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Emerging Tech</span></a>
                   <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Ethical Hacking Basics</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Understand ethical hacking techniques used to test and secure systems.</p>
                   <div class="td_card_review">
@@ -2470,7 +2436,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2485,7 +2451,7 @@
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+                <img src="assets/img/home_3/emerging/devops.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2499,7 +2465,7 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Emerging Tech</span></a>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Emerging Tech</span></a>
                   <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">DevOps & Cloud Basics</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Learn cloud deployment and basic DevOps automation.</p>
                   <div class="td_card_review">
@@ -2520,7 +2486,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2535,7 +2501,7 @@
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
               <a href="" class="td_card_thumb">
-                <img src="assets/img/home_3/robotics/raspberry.jpg" alt="" style="height: 240px;">
+                <img src="assets/img/home_3/emerging/ai.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2549,7 +2515,7 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Emerging Tech</span></a>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Emerging Tech</span></a>
                   <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">AI for Kids</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Kids learn AI through fun tools like Scratch AI and Teachable Machine.</p>
                   <div class="td_card_review">
@@ -2570,7 +2536,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2586,8 +2552,8 @@
  <div class="col-lg-4 col-md-6 course-card" data-category="Skill Development">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/skill/handwriting.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/skill/handwriting.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2601,8 +2567,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Skill Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Handwriting</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Skill Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Handwriting</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Improves writing speed, neatness, and letter formation.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2622,7 +2588,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2636,8 +2602,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="Skill Development">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/skill/drawing.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/skill/drawing.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2651,8 +2617,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Skill Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Drawing</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Skill Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Drawing</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Develops creativity, imagination, and artistic expression.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2672,7 +2638,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2686,8 +2652,8 @@
  <div class="col-lg-4 col-md-6 course-card" data-category="Skill Development">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/skill/drawing.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/skill/personality.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2701,8 +2667,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Skill Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Personality Development</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Skill Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Personality Development</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Improve confidence, communication skills, and overall personality growth.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2722,7 +2688,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -2736,8 +2702,8 @@
           <div class="col-lg-4 col-md-6 course-card" data-category="Skill Development">
             <div class="td_card td_style_3 d-block td_radius_10">
               <span class="td_card_label td_accent_bg td_white_color">New</span>
-              <a href="course-details.html" class="td_card_thumb">
-                <img src="assets/img/home_3/skill/abacus.jpg" alt="" style="height: 240px;">
+              <a href="" class="td_card_thumb">
+                <img src="assets/img/home_3/skill/abacus.png" alt="">
               </a>
               <div class="td_card_info td_white_bg">
                 <div class="td_card_info_in">
@@ -2751,8 +2717,8 @@
                       <span class="td_opacity_7">8 Semesters</span>
                     </li>
                   </ul>
-                  <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Skill Development</span></a>
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Abacus(Indian Abacus)</a></h2>
+                  <a href="" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Skill Development</span></a>
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="">Abacus(Indian Abacus)</a></h2>
                   <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Boosts mental math, memory, and concentration skills.</p>
                   <div class="td_card_review">
                     <div class="td_rating" data-rating="5">
@@ -2772,7 +2738,7 @@
                     <span class="td_heading_color td_opacity_5 td_medium">(5.0/12 Ratings)</span>
                   </div>
                   <div class="td_card_btn">
-                    <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                    <a href="" class="td_btn td_style_1 td_radius_10 td_medium">
                       <span class="td_btn_in td_white_color td_accent_bg">
                         <span>Enroll Now</span>
                       </span>             
@@ -3215,26 +3181,6 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script>
-  const categoryFilter = document.getElementById('categoryFilter');
-  const courses = document.querySelectorAll('.course-card');
 
-  function filterCourses() {
-    const selectedCategory = categoryFilter.value;
-    courses.forEach(course => {
-      if (selectedCategory === 'all' || course.dataset.category === selectedCategory) {
-        course.style.display = 'block';
-      } else {
-        course.style.display = 'none';
-      }
-    });
-  }
-
-  // Run filter once on page load (Computer IT active by default)
-  window.addEventListener('DOMContentLoaded', filterCourses);
-
-  // Run filter on dropdown change
-  categoryFilter.addEventListener('change', filterCourses);
-</script>
   </body>
 </html>
