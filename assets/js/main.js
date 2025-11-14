@@ -541,3 +541,85 @@
     }
   }
 })(jQuery); // End of use strict
+
+// 16.filter
+
+  const categoryFilter = document.getElementById('categoryFilter');
+  const courses = document.querySelectorAll('.course-card');
+  const headerMenuLinks = document.querySelectorAll('#headerCategoryMenu a');
+
+  // ----------------------------
+  // FILTER FUNCTION
+  // ----------------------------
+  function filterCourses(category) {
+    courses.forEach(course => {
+      if (category === 'all' || course.dataset.category === category) {
+        course.style.display = 'block';
+      } else {
+        course.style.display = 'none';
+      }
+    });
+  }
+
+  // ----------------------------
+  // DROPDOWN FILTER
+  // ----------------------------
+  categoryFilter.addEventListener('change', function () {
+    const selected = this.value;
+
+    // Sync navbar active state
+    headerMenuLinks.forEach(link => {
+      link.classList.toggle('active', link.dataset.filter === selected);
+    });
+
+    filterCourses(selected);
+  });
+
+  // ----------------------------
+  // HEADER MENU FILTER (SAME PAGE)
+  // ----------------------------
+  headerMenuLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+
+      // If we are on index.html → allow page navigation
+      if (!window.location.href.includes("courses-grid-view.html")) {
+        return; 
+      }
+
+      // Prevent reload only on courses page
+      e.preventDefault();
+
+      const selected = this.dataset.filter;
+
+      // Sync dropdown
+      categoryFilter.value = selected;
+
+      // Update active state
+      headerMenuLinks.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+
+      filterCourses(selected);
+    });
+  });
+
+  // ----------------------------
+  // CHECK URL PARAMETER (category=Programming)
+  // ----------------------------
+  window.addEventListener('DOMContentLoaded', function () {
+    const params = new URLSearchParams(window.location.search);
+    const urlCategory = params.get("category");
+
+    if (urlCategory) {
+      categoryFilter.value = urlCategory;
+
+      // Sync navbar active class
+      headerMenuLinks.forEach(link => {
+        link.classList.toggle('active', link.dataset.filter === urlCategory);
+      });
+
+      filterCourses(urlCategory);
+    } else {
+      // Default load
+      filterCourses(categoryFilter.value);
+    }
+  });
