@@ -8663,6 +8663,35 @@ html .ui-button.ui-state-disabled:active {
 /*--------------------------------------------------------------
 9. Footer
 ----------------------------------------------------------------*/
+.footer {
+  width: 300px;   /* desktop size */
+  margin-bottom: 10px;
+  margin-left: -10%;
+}
+
+.footer img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .footer {
+    width: 250px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer {
+    width: 200px;
+    margin-left: -5%;
+  }
+}
+
+
 .td_footer.td_style_1 {
   color: #fff;
   background-color: #6440fb;
@@ -8974,6 +9003,9 @@ html .ui-button.ui-state-disabled:active {
 
 .td_footer_text_widget p {
   margin-bottom: 0;
+    font-weight: 400 !important;   /* remove bold */
+  color: rgba(255, 255, 255, 0.75) !important;  /* soft white */
+
 }
 .td_footer_text_widget img + p,
 .td_footer_text_widget svg + p {
