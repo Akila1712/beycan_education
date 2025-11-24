@@ -69,7 +69,7 @@
   --------------------------------------------------------------*/
   function preloader() {
     $('.td_preloader').fadeOut();
-    $('td_preloader_in').delay(150).fadeOut('slow');
+    $('td_preloader_in').delay(10).fadeOut('slow');
   }
 
   /*--------------------------------------------------------------
