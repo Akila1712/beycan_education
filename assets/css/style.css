@@ -7348,6 +7348,33 @@ html .ui-button.ui-state-disabled:active {
 ----------------------------------------------------------------*/
 
 
+
+/* TOP BLACK HEADER FIX */
+.td_top_header_in {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 50px !important;
+}
+
+.td_header_contact_list li {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.td_header_contact_list li span,
+.td_header_contact_list li a {
+    line-height: 1 !important;
+}
+
+.td_top_header_right {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+
 .logo{
       width: 250px;
       height: auto;
@@ -8679,14 +8706,15 @@ html .ui-button.ui-state-disabled:active {
 /* Tablet */
 @media (max-width: 991px) {
   .footer {
-    width: 250px;
+    width: 280px;
+
   }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
   .footer {
-    width: 200px;
+    width: 280px;
     margin-left: -5%;
   }
 }
