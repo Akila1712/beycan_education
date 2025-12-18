@@ -30,6 +30,9 @@
   aspect-ratio: 1 / 1; /* perfect square grid */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
+.glightbox-open {
+  overflow: hidden;
+}
 
 .gallery-img {
   width: 100%;
@@ -1346,18 +1349,27 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e){
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
+   <script>
   const lightbox = GLightbox({
     selector: '.glightbox',
     touchNavigation: true,
     loop: true,
-    autoplayVideos: false,
-    closeButton: true,
-    openEffect: 'zoom',
-    closeEffect: 'fade',
-    history: false // ⚡ prevents "back button" from exiting website
+    closeOnOutsideClick: true,
+    closeOnEsc: true
+  });
+
+  /* 🔥 Fix mobile back button issue */
+  document.addEventListener('glightbox_open', () => {
+    history.pushState(null, null, location.href);
+  });
+
+  window.addEventListener('popstate', () => {
+    if (document.querySelector('.glightbox-container')) {
+      lightbox.close();
+    }
   });
 </script>
+
 
   </body>
 </html>
