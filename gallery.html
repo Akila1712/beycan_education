@@ -2,161 +2,175 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Gallery – Same Size & Fit</title>
+<title>Institute Gallery – GLightbox</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap -->
+<!-- Bootstrap (for grid) -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<!-- Lightbox -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+<!-- GLightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
 <style>
+/* ================= GALLERY STYLES ================= */
+
+#gallery {
+  padding: 80px 0;
+}
+
+/* Section heading */
+.td_section_heading h2 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+/* Gallery item */
 .gallery-item {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .gallery-item a {
   display: block;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Image box */
-
+/* Same size images */
 .gallery-item img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: top center;
+  transition: transform 0.35s ease;
 }
 
-/* Hover zoom */
 .gallery-item a:hover img {
   transform: scale(1.05);
 }
 
-/* ===== LIGHTBOX SAME SIZE ===== */
-.lb-image {
-  width: 600px !important;
-  height: 400px !important;
-  object-fit: contain !important; /* ✅ NO CROP IN LIGHTBOX */
-  border-radius: 6px;
+/* ================= GLIGHTBOX FIX ================= */
+
+/* ================= GLIGHTBOX POPUP IMAGE FIX ================= */
+
+/* Popup image – same size & full image visible */
+.glightbox-container .gslide-image img {
+  width: 80vh !important;
+  height: 80vh !important;
+  max-width: 90vw !important;
+  max-height: 90vh !important;
+  object-fit: contain !important;   /* ✅ no crop */
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  background: transparent !important;
 }
 
+/* Soft overlay (remove hard black background) */
+.glightbox-overlay {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
 
-/* Mobile lightbox */
-@media (max-width: 576px) {
-  .lb-image {
-    width: 90vw !important;
-    height: 60vw !important;
-    max-height: 70vh !important;
+/* ---------------- MOBILE FIX ---------------- */
+@media (max-width: 575px) {
+  .glightbox-container .gslide-image img {
+    width: 85vw !important;
+    height: 85vw !important;
+    max-width: 95vw !important;
+    max-height: 85vh !important;
   }
-}
-
-/* Heading spacing */
-.gallery-heading {
-  margin-top: 120px;
 }
 
 </style>
 </head>
 
 <body>
+
+<!-- ================= START GALLERY ================= -->
 <section id="gallery">
-  <div class="td_height_112 td_height_lg_75"></div>
   <div class="container">
-    <!-- Section Heading -->
-    <div class="td_section_heading td_style_1 text-center wow fadeInUp mt-5" data-wow-duration="1s" data-wow-delay="0.2s">
-      <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">EXPLORE OUR MOMENTS</p>
-      <h2 class="td_section_title td_fs_48 mb-0">        Learning and activities <br> at our institute
-</h2>
+
+    <!-- Heading -->
+    <div class="td_section_heading text-center">
+      <p class="text-uppercase text-muted">EXPLORE OUR MOMENTS</p>
+      <h2>Learning and activities <br> at our institute</h2>
     </div>
-    <div class="td_height_50 td_height_lg_50"></div>
+
+    <br><br>
 
     <!-- Gallery Grid -->
-<div class="row td_mt_60">
-      <!-- Gallery Item -->
-     <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
-      <a href="assets/img/home_4/Abacus/25.jpeg" data-lightbox="gallery">
-        <img src="assets/img/home_4/Abacus/25.jpeg" alt="">
-      </a>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
+        <a href="assets/img/home_4/Abacus/25.jpeg" class="glightbox" data-gallery="institute">
+          <img src="assets/img/home_4/Abacus/25.jpeg" alt="">
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
+        <a href="assets/img/home_4/Abacus/22.jpeg" class="glightbox" data-gallery="institute">
+          <img src="assets/img/home_4/Abacus/22.jpeg" alt="">
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
+        <a href="assets/img/home_4/Abacus/28.jpeg" class="glightbox" data-gallery="institute">
+          <img src="assets/img/home_4/Abacus/28.jpeg" alt="">
+        </a>
+      </div>
     </div>
 
-  <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
-      <a href="assets/img/home_4/Abacus/22.jpeg" data-lightbox="gallery">
-        <img src="assets/img/home_4/Abacus/22.jpeg" alt="">
-      </a>
+    <br><br>
+
+    <!-- Second Heading -->
+    <div class="td_section_heading text-center">
+      <h2>Abacus classes conducted <br> in schools</h2>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
-      <a href="assets/img/home_4/Abacus/28.jpeg" data-lightbox="gallery">
-        <img src="assets/img/home_4/Abacus/28.jpeg" alt="">
-      </a>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
-      <a href="assets/img/home_4/Abacus/33.jpeg" data-lightbox="gallery">
-        <img src="assets/img/home_4/Abacus/Picture3.jpg" alt="">
-      </a>
-    </div>
-
-    </div>
- <div class="td_section_heading td_style_1 text-center wow fadeInUp mt-5">
-  <h2 class="td_section_title td_fs_48 mb-0">
-    Abacus classes conducted <br>  in schools
-  </h2>
-</div> 
-    <div class="td_height_50 td_height_lg_50"></div>
+    <br><br>
 
     <!-- Gallery Grid -->
-<div class="row td_mt_60">
-      <!-- Gallery Item -->
-       <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
-      <a href="assets/img/home_4/Abacus/22.jpeg" data-lightbox="gallery">
-        <img src="assets/img/home_4/Abacus/22.jpeg" alt="">
-      </a>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
+        <a href="assets/img/home_4/Abacus/22.jpeg" class="glightbox" data-gallery="institute">
+          <img src="assets/img/home_4/Abacus/22.jpeg" alt="">
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
+        <a href="assets/img/home_4/Abacus/28.jpeg" class="glightbox" data-gallery="institute">
+          <img src="assets/img/home_4/Abacus/28.jpeg" alt="">
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
+        <a href="assets/img/home_4/Abacus/Picture3.jpg" class="glightbox" data-gallery="institute">
+          <img src="assets/img/home_4/Abacus/Picture3.jpg" alt="">
+        </a>
+      </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
-      <a href="assets/img/home_4/Abacus/28.jpeg" data-lightbox="gallery">
-        <img src="assets/img/home_4/Abacus/28.jpeg" alt="">
-      </a>
-    </div>
+    <br><br>
 
-    <div class="col-xs-12 col-sm-6 col-md-4 gallery-item">
-      <a href="assets/img/home_4/Abacus/Picture3.jpg" data-lightbox="gallery">
-        <img src="assets/img/home_4/Abacus/Picture3.jpg" alt="">
+    <!-- View More -->
+    <div class="text-center">
+      <a href="https://share.google/j8eiul1DoDH0ZW3hs" class="btn btn-primary btn-lg">
+        View More
       </a>
-    </div>
-
     </div>
 
   </div>
-  <div class="text-center mt-5">
-            <a href="https://share.google/j8eiul1DoDH0ZW3hs" class="td_btn td_style_1 td_radius_30 td_medium">
-              <span class="td_btn_in td_white_color td_accent_bg">
-                <span>View More</span>
-                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </span>
-            </a>
-          </div>
-  <div class="td_height_120 td_height_lg_80"></div>
 </section>
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<!-- ================= END GALLERY ================= -->
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 <script>
-lightbox.option({
-  resizeDuration: 200,
-  wrapAround: true
-});
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true
+  });
 </script>
 
 </body>
