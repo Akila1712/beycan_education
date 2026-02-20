@@ -65,12 +65,50 @@
   });
 
   /*--------------------------------------------------------------
-    1. Preloader
+    1. Preloader & Popup
   --------------------------------------------------------------*/
-  function preloader() {
-    $('.td_preloader').fadeOut();
-    $('td_preloader_in').delay(10).fadeOut('slow');
-  }
+
+(function () {
+
+  const popup = document.getElementById("welcomePopup");
+  const preloader = document.getElementById("preloader");
+
+  window.addEventListener("load", function () {
+
+    // Wait 3 seconds for preloader
+    setTimeout(function () {
+
+      // Fade preloader
+      if (preloader) {
+        preloader.style.opacity = "0";
+        preloader.style.transition = "opacity 0.5s ease";
+
+        setTimeout(function () {
+          preloader.style.display = "none";
+
+          // AFTER preloader completely removed → show popup
+          if (popup && !sessionStorage.getItem("popupShown")) {
+            popup.style.display = "flex";
+            sessionStorage.setItem("popupShown", "true");
+
+            // Auto close after 7 seconds
+            setTimeout(() => {
+              popup.style.display = "none";
+            }, 7000);
+          }
+
+        }, 500); // match fade time
+      }
+
+    }, 3000); // preloader time (3 seconds)
+
+  });
+
+  window.closePopup = function () {
+    if (popup) popup.style.display = "none";
+  };
+
+})();
 
   /*--------------------------------------------------------------
     2. Mobile Menu
@@ -623,3 +661,7 @@
       filterCourses(categoryFilter.value);
     }
   });
+
+
+
+  
